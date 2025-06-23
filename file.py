@@ -8,7 +8,7 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
 # OpenAI client
-client = OpenAI(api_key="bro thought ill put my api key smh ##put your api key")
+client = OpenAI(api_key=" ##put your api key")
 
 # Streamlit settings
 st.set_page_config(page_title="File Search Assistant", layout="centered", initial_sidebar_state="collapsed")
@@ -47,7 +47,7 @@ if st.button("Send") and user_input:
         tools = [
             {
                 "type": "file_search",
-                "vector_store_ids": [os.getenv("VECTOR_STORE_ID", "smh(again) ##  put your vector store id")],
+                "vector_store_ids": [os.getenv("VECTOR_STORE_ID", " ##  put your vector store id")],
                 "max_num_results": 3
             }
         ]
